@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.barra{
+    width:100%;
+    background: #000000;
+    text-align: center;
+    position: fixed;
+}
+
+.barra ul{
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 20px;
+    transition: all .3s ease;
+}
+
+.menu ul li:hover{
+    transform: scale(1.2);
+    background: #660708;
+}
+
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    background: 
+    linear-gradient(to right, black 40%, transparent 80%),
+    url("strangerdescarga.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content {
+  flex: 12;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.logo-serie {
+  width: 450px;
+  max-width: 90%;
+}
+
+
+
+.apartado-1 {
+    background-image:url(fondo1.jpg) ;
+     background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.apartado-1 {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuadro1 {
+    width: 600px;
+    max-width: 90%;
+    background: rgba(136, 49, 49, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ 
+.apartado-2 {
+    background-image:url(descargaapar2.jpg) ;
+     background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.temporadas {
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto 80px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+}
+
+.temp-botones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.temp-botones button {
+  background: transparent;
+  color: white;
+  border: 1px solid #e50914;
+  padding: 10px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.temp-botones button:hover,
+.temp-botones button.activo {
+  background: #e50914;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 20px;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+.apartado-3 {
+    background-image:url(descargaapar3.jpg) ;
+     background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabla-guionistas {
+  width: 80%;
+  max-width: 800px;
+  margin: 80px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: rgb(215, 215, 215);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+}
+
+.tabla-guionistas caption {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.tabla-guionistas th {
+  background: #320303;
+  padding: 14px;
+}
+
+.tabla-guionistas td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+.apartado-4 {
+    background-image:url(descargaapar4.jpg) ;
+     background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-selection{
+    text-align: center;
+    color: white;
+    font-size: 9rem;
+    text-transform: uppercase;
+}
+
+
+ .carrusel {
+  position: relative;
+  width: 1040px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.ventana { overflow: hidden; }
+
+.carrusel-track {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.tarjeta {
+  position: relative;
+  min-width: 240px;
+  height: 360px;
+  margin-right: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta h4 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  color: white;
+  text-shadow: 0 2px 6px black;
+}
+
+.tarjeta small {
+  display: block;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.carrusel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-ant { left: -20px; }
+.btn-sig { right: -20px; }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.creador {
+  color: #fff;
+}

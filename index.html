@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger things</title>
+    <link rel="stylesheet" href="diseño.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <!--esta es la parte del menu, use uno llamado menu pegajoso-->
+    <header class="header">
+        <div class="barra">
+        <nav class="menu">
+                <ul>
+                    <li><a href="#inicio">inicio</a></li>
+                    <li><a href="#Sinopsis">Sinopsis</a></li>
+                    <li><a href="#Temporadas">Temporadas</a></li>
+                    <li><a href="#Guionistas">Guionistas</a></li>
+                    <li><a href="#Actores">Actores y Personajes</a></li>
+                </ul>
+            </nav>
+            </div>
+             <section id="inicio" class="apartado0"></section>
+                <div class="header-content">
+                  <h1><img src="Stranger_Things_logo.png" alt="stranger things" class="logo-serie"></h1>
+                </div>
+            </section>
+    </header>
+
+     
+     
+
+     <!--use class llamadas apartado1, 2, 3 y 4 para poner las imagenes de fondo-->
+    <section id="Sinopsis" class="apartado-1">
+        <div class="cuadro1">
+        <h2>Sinopsis</h2>
+            <p class="txt-p">Ambientada en la década de 1980 en el pueblo ficticio de Hawkins, Indiana, Stranger Things sigue la misteriosa desaparición de Will Byers en noviembre de 1983. Mientras su madre Joyce, el jefe de policía Jim Hopper y los amigos de Will lo buscan, conocen a Eleven, una niña con poderes telequinéticos que escapó de un laboratorio secreto. Juntos descubren conspiraciones gubernamentales y la amenaza del Upside Down (o Mundo del Revés), una dimensión alternativa hostil llena de criaturas sobrenaturales</p>
+         </div>
+
+    </section>
+
+
+
+
+    <!---este apartado puse los trailers de cada temporada usando button-->
+    <section id="Temporadas" class="apartado-2">
+
+        
+      <h2 class="titulo-seccion">Temporadas</h2>
+
+  <div class="temporadas">
+    <div class="temp-botones" id="botones">
+      <button onclick="verTemporada(0)">Temporada 1</button>
+      <button onclick="verTemporada(1)">Temporada 2</button>
+      <button onclick="verTemporada(2)">Temporada 3</button>
+      <button onclick="verTemporada(3)">Temporada 4</button>
+      <button onclick="verTemporada(4)">Temporada 5</button>
+    </div>
+
+    <h3 id="temp-titulo"></h3>
+    <p id="temp-texto"></p>
+
+    <div class="video">
+      <iframe id="trailer" title="Trailer" allowfullscreen></iframe>
+    </div>
+  </div>
+    </section>
+
+
+
+
+
+
+
+      <!--en esta parte puse una tabla de los guionistas, utilizando lo aprendido en clase de la profe ana-->
+    <section id="Guionistas" class="apartado-3">
+        <table border="1" class="tabla-guionistas ">
+            <caption>Guionistas</caption>
+            <tr>
+                <th>Nombre</th>
+                <th>trabajo</th>
+            </tr>
+
+            <tr>
+                <td>Matt Duffer y Ross Duffer</td>
+                <td>creadores, showrunners y guionistas recurrentes en todas las temporadas.creadores, showrunners y guionistas recurrentes en todas las temporadas.</td>
+            </tr>
+
+            <tr>
+                <td>Kate Trefry</td>
+                <td>guionista y coproductora ejecutiva en temporadas posteriores</td>
+            </tr>
+
+            <tr>
+                <td>Paul Dichter</td>
+                <td>escritor de varios episodios de la serie</td>
+            </tr>
+
+            <tr>
+                <td>Justin Doble</td>
+                <td>guionista en las primeras temporadas</td>
+            </tr>
+
+        </table>
+        
+    </section>
+
+
+
+
+
+
+
+    <!--en esta parte se me ocurrio poner un carrusel, esto lo vi en tiktok y quise agregarlo por lo bonito que se veia,-->
+    <section id="Actores" class="apartado-4">
+
+     <h2 class="titulo-selection">Actores y sus personajes</h2>
+
+     <!--este es el boton de la parte izquierda-->
+        <div class="carrusel">
+     <button class="btn-ant" onclick="anterior()">❮</button>
+
+     <div class="ventana">
+     <div class="carrusel-track" id="track">
+
+      <div class="tarjeta">
+        <h4>Millie Bobby Brown <small>Eleven</small></h4>
+        <img src="milliebobbybrown.jpg" alt="Millie Bobby Brown">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Finn Wolfhard <small>Mike Wheeler</small></h4>
+        <img src="finnwolfhard.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Noah Schnapp <small>Will Byers</small></h4>
+        <img src="noahschnapp.jpg" alt="Noah Schnapp">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Gaten Matarazzo <small>Dustin Henderson</small></h4>
+        <img src="gatenmatarazzo.jpg" alt="Gaten Matarazzo">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Caleb McLaughlin <small>Lucas Sinclair</small></h4>
+        <img src="calebmclaughlin.jpg" alt="Caleb McLaughlin">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Sadie Sink <small>Max Mayfield</small></h4>
+        <img src="sadiesink.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Winona Ryder <small>Joyce Byers</small></h4>
+        <img src="winonaryder.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>David Harbour <small>Jim Hopper</small></h4>
+        <img src="davidharbour.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Natalia Dyer<small>Nancy Wheeler</small></h4>
+        <img src="nataliadyer.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Charlie Heaton <small>Jonathan Byers</small></h4>
+        <img src="charlieheatonjpg.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Joe Keery <small>Steve Harrintgton</small></h4>
+        <img src="joekeery.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Maya Hawke <small>Robin Buckley</small></h4>
+        <img src="mayahawke.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Priah Ferguson <small>Erica Sinclair</small></h4>
+        <img src="priahferguson.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Brett Gelman <small>Murray Bauman</small></h4>
+        <img src="brettgelman.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Cara Buono <small>Karen Wheeler</small></h4>
+        <img src="carabuono.jpg" alt="Finn Wolfhard">
+      </div>
+
+      <div class="tarjeta">
+        <h4>Jamie Campell Bower <small>Henry Creel</small></h4>
+        <img src="jamiecampbellbower.jpg" alt="Finn Wolfhard">
+      </div>
+
+
+     </div>
+     </div>
+
+       <!---este es el boton de la parte derecha-->
+     <button class="btn-sig" onclick="siguiente()">❯</button>
+     </div>
+
+     <h2 class="creador">Hecho por:Estrella Lizeth Bravo Reyes</h2>
+
+    </section>
+
+    
+
+     
+
+
+
+</body>
+</html>
